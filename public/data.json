@@ -1,0 +1,48 @@
+{
+  "tips": [
+    {
+      "id": 1,
+      "icon": "health",
+      "title": "Check the animal's health",
+      "text": "Look for bright eyes, a clean nose and a steady walk. Skip animals that limp, cough or refuse food."
+    },
+    {
+      "id": 2,
+      "icon": "age",
+      "title": "Confirm the age",
+      "text": "A cow should be at least 2 years old and a goat at least 1 year. The teeth are the most reliable sign."
+    },
+    {
+      "id": 3,
+      "icon": "care",
+      "title": "Care for it until Qurbani",
+      "text": "Give clean water, fresh grass and shade. Keep the animal calm and avoid long, stressful transport."
+    }
+  ],
+  "breeds": [
+    {
+      "id": 1,
+      "name": "Sahiwal",
+      "type": "Cow",
+      "weight": "300 - 450 kg",
+      "image": "/breeds/sahiwal.jpg",
+      "text": "Heat tolerant and calm. Popular for its heavy build and good meat yield."
+    },
+    {
+      "id": 2,
+      "name": "Local Deshi",
+      "type": "Cow",
+      "weight": "150 - 300 kg",
+      "image": "/breeds/deshi.jpg",
+      "text": "Hardy and well suited to our climate. Loved for its natural taste and fair price."
+    },
+    {
+      "id": 3,
+      "name": "Black Bengal",
+      "type": "Goat",
+      "weight": "15 - 30 kg",
+      "image": "/breeds/black-goat.jpg",
+      "text": "Small, active and known for tender meat. A good choice for smaller families."
+    }
+  ]
+}
