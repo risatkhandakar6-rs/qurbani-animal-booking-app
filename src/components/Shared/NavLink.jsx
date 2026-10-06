@@ -9,7 +9,7 @@ export default function NavLink({ children, href}) {
 
   return (
     <div>
-      <Link href={href} className={`${isActive} 'border-b-4 border-blue-300':''`}>{children}
+      <Link href={href} className={`${isActive ?'border-b-2 border-green-500':''}`}>{children}
       </Link>
     </div>
   )

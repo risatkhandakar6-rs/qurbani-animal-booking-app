@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Raised on natural grass and straw, calm nature and fully vaccinated.",
-    "image": "/breeds/deshi-shahi.png",
+    "image": "/breeds/deshi-cow.png",
     "category": "Large Animal"
   },
   {
@@ -25,19 +25,20 @@
     "image": "/breeds/shahiwal-bull.png",
     "category": "Large Animal"
   },
-  {
+    {
     "id": 3,
-    "name": "Red Chittagong Cow",
-    "type": "Cow",
-    "breed": "Red Chittagong",
-    "price": 95000,
-    "weight": 220,
-    "age": 3,
-    "location": "Chattogram",
-    "description": "Hardy red cow raised on grass and rice bran. A good choice for medium sized families.",
-    "image": "/breeds/red-chittagong.png",
-    "category": "Large Animal"
+    "name": "Jamunapari Goat",
+    "type": "Goat",
+    "breed": "Jamunapari",
+    "price": 38000,
+    "weight": 42,
+    "age": 2,
+    "location": "Jashore",
+    "description": "Tall Jamunapari goat with a healthy frame. Well fed, vaccinated and ready for Qurbani.",
+    "image": "/breeds/jamuna-pari2.png",
+    "category": "Small Animal"
   },
+ 
   {
     "id": 4,
     "name": "Brahman Cross Bull",
@@ -48,7 +49,7 @@
     "age": 4,
     "location": "Narsingdi",
     "description": "Large Brahman cross bull with a strong frame. Ideal for big family or shared Qurbani.",
-    "image": "/breeds/brahama-cross.png",
+    "image": "/breeds/brahama.jpg",
     "category": "Large Animal"
   },
   {
@@ -61,21 +62,21 @@
     "age": 2,
     "location": "Tangail",
     "description": "Active Black Bengal goat known for its tender meat. A good choice for smaller families.",
-    "image": "/breeds/black-goat.png",
+    "image": "/breeds/black-goat.jpg",
     "category": "Small Animal"
   },
-  {
+   {
     "id": 6,
-    "name": "Jamunapari Goat",
-    "type": "Goat",
-    "breed": "Jamunapari",
-    "price": 38000,
-    "weight": 42,
-    "age": 2,
-    "location": "Jashore",
-    "description": "Tall Jamunapari goat with a healthy frame. Well fed, vaccinated and ready for Qurbani.",
-    "image": "/breeds/jamuna-pari.png",
-    "category": "Small Animal"
+    "name": "Red Chittagong Cow",
+    "type": "Cow",
+    "breed": "Red Chittagong",
+    "price": 95000,
+    "weight": 220,
+    "age": 3,
+    "location": "Chattogram",
+    "description": "Hardy red cow raised on grass and rice bran. A good choice for medium sized families.",
+    "image": "/breeds/red-chittagong.png",
+    "category": "Large Animal"
   },
   {
     "id": 7,
@@ -100,7 +101,7 @@
     "age": 2,
     "location": "Khulna",
     "description": "Healthy Garole sheep with soft tender meat. Raised on natural grass and suitable for Qurbani.",
-    "image": "/breeds/garole-sheep.png",
+    "image": "/breeds/garole3.jpg",
     "category": "Small Animal"
   }
 ]
