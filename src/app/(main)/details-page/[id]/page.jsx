@@ -91,7 +91,7 @@ export default function AnimalDetails({ params }) {
             Fill up your details to place a booking request for Qurbani.
           </p>
 
-     <BookingForm></BookingForm>
+     <BookingForm animal={animal}></BookingForm>
         </div>
 
       </div>

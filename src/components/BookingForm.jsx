@@ -1,8 +1,14 @@
+"use client"
+import { toast } from "react-toastify"
+
 export default function BookingForm({ animal }) {
   const inputClass =
     "w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
   const labelClass = "block text-sm font-medium text-gray-700 mb-1"
 
+  const handleToast = () => {
+    toast.success(`${animal?.name} booking confirm`)
+  }
   return (
     <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 md:p-8">
       <h3 className="text-xl font-bold text-gray-900">Book This Animal</h3>
@@ -62,6 +68,7 @@ export default function BookingForm({ animal }) {
         </div>
 
         <button
+          onClick={handleToast}
           type="button"
           className="w-full rounded-lg bg-green-600 py-3 text-sm font-semibold text-white hover:bg-green-700 transition"
         >
