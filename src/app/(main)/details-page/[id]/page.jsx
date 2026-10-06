@@ -2,6 +2,7 @@
 import BookingForm from '@/components/BookingForm';
 import { useAnimals } from '@/context/AnimalContext'
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import React from 'react'
 
 export default function AnimalDetails({ params }) {
@@ -17,6 +18,9 @@ export default function AnimalDetails({ params }) {
       </div>
     );
   }
+  if (!animal) {
+  notFound()
+}
   return (
    <section className="container mx-auto px-4 py-10 max-w-6xl">
      

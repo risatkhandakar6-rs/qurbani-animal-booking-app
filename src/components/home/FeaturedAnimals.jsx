@@ -14,14 +14,14 @@ export default function FeaturedAnimals() {
   }
   const featured = animals.slice(0,4)
   return (
-    <section className="container mx-auto my-10 " >
+    <section className="container mx-auto my-10  px-4 md:px-6 lg:px-8 max-w-7xl " >
       <div >
          <div className="max-w-xl mb-10  md:text-left  grid text-center items-center justify-center mx-auto">
            <h2 className="text-2xl md:text-4xl font-bold text-black text-center ">
            Find Your Perfect Qurbani</h2>
           <p className="mt-3 text-sm text-gray-600 whitespace-nowrap text-center">Choose healthy and quality animals with confidence. </p>
         </div>
-       <div className="grid grid-cols-1 md:grid-cols-2 w-[1100px] gap-6 mx-auto">
+       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4  gap-6 mx-auto">
         {featured.map((animal) => (
           <div
             key={animal.id}

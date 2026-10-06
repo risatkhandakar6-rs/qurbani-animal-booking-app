@@ -1,28 +1,49 @@
 'use client'
 import { useAnimals } from '@/context/AnimalContext';
 import Link from 'next/link';
+import { useState } from 'react';
 
 
 
 export default function AllAnimals() {
   const { animals, loading } = useAnimals()
+ const [sortOrder,setSortOrder]=useState('default')
    if (loading) {
     return (
       <div className="flex justify-center py-20 bg-[#F5F7FA]">
         <span className="loading loading-spinner loading-lg text-white"></span>
       </div>
-    );
+     );
+ 
+
   }
+  const SortedAnimals = [...animals].sort((a, b) => {
+    if (sortOrder == 'low') return a.price - b.price;
+    if(sortOrder == 'high')return b.price - a.price
+  })
+  
   return (
-    <section className="container mx-auto my-10" >
+    <section className="container mx-auto my-10  px-4 md:px-6 lg:px-8" >
       <div >
          <div className="max-w-xl mb-10  md:text-left  grid text-center items-center justify-center mx-auto">
            <h2 className="text-2xl md:text-4xl font-bold text-black text-center ">
              All the animals here</h2>
           <p className="mt-3 text-xs text-gray-600 whitespace-nowrap text-center">Choose your favourite animal from here</p>
         </div>
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-autu">
-        {animals.map((animal) => (
+        <div className="flex justify-end mb-6">
+          <select
+            value={sortOrder}
+            onChange={(e) =>setSortOrder(e.target.value)}
+          >
+            <option value="default">Sort by price</option>
+            <option value="low">Low to high</option>
+            <option value="high">High to low</option>
+        </select>
+      </div>
+
+     
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-autu">
+        {SortedAnimals.map((animal) => (
           <div
             key={animal.id}
             className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between"
