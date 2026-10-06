@@ -3,6 +3,7 @@ import { useAnimals } from '@/context/AnimalContext';
 import Link from 'next/link';
 
 
+
 export default function AllAnimals() {
   const { animals, loading } = useAnimals()
    if (loading) {
@@ -66,6 +67,7 @@ export default function AllAnimals() {
                   </span>
                 
                 </div>
+              <Link href={`/details-page/${animal.id}`}>View Details</Link>
                
                 
 
