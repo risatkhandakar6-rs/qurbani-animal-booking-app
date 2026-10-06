@@ -26,7 +26,7 @@ export default function NavBar() {
        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <h1 className='text-2xl font-bold'>Eid<span className=' text-[#4CAF4F]'>Livestock</span></h1>
   </div>
   <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">

@@ -5,7 +5,9 @@ import Link from "next/link";
 
 import QurbaniTips from "@/components/home/QurbaniTips";
 import BestBreeds from "@/components/home/BestBreeds";
+import FeaturedAnimals from "@/components/home/FeaturedAnimals";
 export default function Home() {
+
   return (
     <>
        <div className=" bg-[#EEF7EE] px-5 py-2 md:px-10 lg:px-20 lg:py-20 flex justify-around mx-auto flex-col lg:flex-row  ">
@@ -23,7 +25,7 @@ export default function Home() {
       </div>
 
       
-      
+      <FeaturedAnimals></FeaturedAnimals>
       <QurbaniTips></QurbaniTips>
       <BestBreeds></BestBreeds>
     </>
