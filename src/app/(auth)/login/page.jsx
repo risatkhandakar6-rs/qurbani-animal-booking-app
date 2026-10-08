@@ -2,28 +2,43 @@
 import React from 'react'
 
 import Link from 'next/link'
+import { useForm } from 'react-hook-form'
 
 export default function LogInPage() {
+
+  const {
+    register,
+    handleSubmit,
+    formState:{errors}
+
+  }=useForm()
   const loginFunc = (e) => {
-    e.preventDefault()
-    const email = e.target.email;
-    const password = e.target.password;
-    console.log(email,password , 'this is inputs')
-    
+  
   }
   return (
     <div className='flex mx-auto justify-center items-center my-auto h-screen'>
-       <form onSubmit={loginFunc}>
+       <form onSubmit={handleSubmit(loginFunc)}>
       <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
 <h1 className='fieldset-legend mx-auto font-bold text-lg'>Login Your Accout</h1>
  
     
            
   <label className="label">Email</label>
-  <input name='email' type="email" className="input" placeholder="Email" />
+          <input
+            {...register('email',{required:'Email is required'})}
+            type="email"
+            className="input"
+            placeholder="Email" />
+          {errors.email && <span className='text-red-400'>{errors.email.message}</span>}
 
   <label className="label">Password</label>
- <input name='password' type="password" className="input" placeholder="Password" />
+          <input
+            {...register('password', { required: 'Password  is required' })}
+            type="password"
+            className="input"
+            placeholder="Password" />
+            {errors.password && <span className='text-red-500'>{errors.password.message}</span>}
+       
  
           
  
