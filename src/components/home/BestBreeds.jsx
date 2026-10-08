@@ -28,7 +28,7 @@ export default function BestBreeds() {
          <div className="max-w-xl mb-10  md:text-left  grid text-center items-center justify-center mx-auto">
            <h2 className="text-2xl md:text-4xl font-bold text-black text-center ">
              Qurbani tips before you buy</h2>
-          <p className="mt-3 text-xs text-gray-600 whitespace-nowrap">Three quick checks that help you choose a healthy animal <br className="inline sm:hidden" /> and keep it well until Eid.</p>
+          <p className="mt-3 text-xs text-center text-gray-600 whitespace-nowrap">Three quick checks that help you choose a healthy animal <br className="inline sm:hidden" /> and keep it well until Eid.</p>
         </div>
          <div className="grid gap-6 sm:gap-2 lg:gap-6 grid-cols-1 sm:grid-cols-3 ">
           {breeds.map((breed) => (
