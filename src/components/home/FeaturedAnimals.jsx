@@ -43,7 +43,7 @@ export default function FeaturedAnimals() {
                   <h3 className="text-xl font-bold text-gray-800">
                     {animal.name}
                   </h3>
-                  <span className="bg-green-100 text-green-700 text-xs px-2.5 py-1 rounded-full font-semibold">
+                  <span className="bg-green-100 text-green-700 text-xs whitespace-nowrap px-4 py-1 rounded-2xl font-semibold">
                     {animal.category}
                   </span>
                 </div>

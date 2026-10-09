@@ -2,7 +2,7 @@
 
 QurbaniHat is a modern livestock marketplace where users can explore Qurbani animals (cows and goats), view details, and place a booking after logging in.
 
-**Live URL:** https://your-live-link.vercel.app
+**Live URL:** https://qurbani-animal-booking-app.vercel.app
 **GitHub:** https://github.com/risatkhandakar6-rs/qurbani-animal-booking-app
 
 ## Purpose
@@ -67,8 +67,8 @@ GOOGLE_CLIENT_SECRET=
 ## Run Locally
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/risatkhandakar6-rs/qurbani-animal-booking-app.git
+cd qurbani-animal-booking-app
 npm install
 npm run dev
 ```
