@@ -36,7 +36,7 @@ export default function RegisterPage() {
     return
     }
     toast.success('SignUp succesfull')
-    router.push('/')
+    router.push('/login')
     
   }
   

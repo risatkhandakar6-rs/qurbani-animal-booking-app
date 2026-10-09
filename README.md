@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QurbaniHat
 
-## Getting Started
+QurbaniHat is a modern livestock marketplace where users can explore Qurbani animals (cows and goats), view details, and place a booking after logging in.
 
-First, run the development server:
+**Live URL:** https://your-live-link.vercel.app
+**GitHub:** https://github.com/risatkhandakar6-rs/qurbani-animal-booking-app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Purpose
+
+To make buying Qurbani animals easy: browse animals, compare prices, check details, and book with a simple authenticated flow.
+
+## Key Features
+
+- Responsive design for mobile, tablet, and desktop
+- Navbar with logo, Home and All Animals links; avatar and logout when logged in, login and register buttons when logged out
+- Footer with contact info, social links, and about section
+- Home page with hero banner, featured animals (4), Qurbani Tips, and Top Breeds
+- All Animals page with sort by price (low to high / high to low) and details button
+- Animal Details page (private route) with full info and booking form
+- Booking form resets on submit and shows a success toast (data is not saved)
+- Email/password authentication and Google social login (Better Auth)
+- Registration with name, email, photo URL, and password
+- My Profile page showing name, photo, and email
+- Update Information page to change name and photo
+- Toast notifications for success and error messages
+- Loading spinner while fetching data
+- Custom 404 not-found page
+- Animations using (Animate.css / React Spring / Lottie)
+- Environment variables for secure configuration
+
+## Routes
+
+| Route | Access |
+|---|---|
+| `/` | Public |
+| `/animals` | Public |
+| `/login` | Public |
+| `/register` | Public |
+| `/details-page/[id]` | Private |
+| `/my-profile` | Private |
+| `/my-profile/update` | Private |
+
+## npm Packages Used
+
+- next
+- react, react-dom
+- tailwindcss
+- daisyui
+- better-auth
+- react-hook-form
+- react-toastify
+- (animate.css / react-spring / lottie-react)
+- (your database package, e.g. mongodb)
+
+## Environment Variables
+
+Create a `.env` file in the root:
+
+```env
+BETTER_AUTH_SECRET=
+BETTER_AUTH_URL=
+MONGODB_URI=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run Locally
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000

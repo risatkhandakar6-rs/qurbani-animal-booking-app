@@ -24,15 +24,29 @@ export default  function NavBar() {
       </div>
       <ul
         tabIndex={-1}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-60 p-2 shadow">
             
 
   <li><NavLink href={'/'}>Home</NavLink></li>
-      <li><NavLink href={'/allAnimals'}>All Animals</NavLink></li>
+            <li><NavLink href={'/allAnimals'}>All Animals</NavLink></li>
+            
+               <li >
+               {isPending? ( 
+        <span className="loading loading-spinner loading-lg text-success"></span>
+      
+    ): user? ( <div className="flex gap-2 justify-start items-start flex-col w-full">
+        <h1>Hello! {user.name}</h1>
+      <Image className=' rounded-full w-10 h-10 ' src={ user.image||UserPic} height={10} width={30} alt='user'></Image>
+        <button className='bg-[#4CAF4F] btn' onClick={async ()  => await authClient.signOut()}>LogOut</button>
+      </div>) :
+    <button className='bg-[#4CAF4F] btn'><Link href={"/login"}>LogIn</Link></button>
+  }
+            </li>
+           
        
       </ul>
     </div>
-    <h1 className='text-2xl font-bold'>Eid<span className=' text-[#4CAF4F]'>Livestock</span></h1>
+    <h1 className='text-2xl font-bold'>Qurbani<span className=' text-[#4CAF4F]'>Livestock</span></h1>
   </div>
   <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
@@ -43,12 +57,12 @@ export default  function NavBar() {
  </ul>
       </div> 
       
-      <div className='navbar-end flex gap-2'>
+      <div className='navbar-end hidden sm:flex gap-2'>
          {isPending? ( 
         <span className="loading loading-spinner loading-lg text-success"></span>
       
     ): user? ( <div className="flex gap-2 items-center">
-        <h1>{user.name}! well come</h1>
+        <h1>Hello! {user.name}</h1>
       <Image className=' rounded-full w-10 h-10 ' src={ user.image||UserPic} height={10} width={30} alt='user'></Image>
         <button className='bg-[#4CAF4F] btn' onClick={async ()  => await authClient.signOut()}>LogOut</button>
       </div>) :

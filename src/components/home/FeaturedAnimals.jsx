@@ -67,7 +67,7 @@ export default function FeaturedAnimals() {
                   </span>
                 
                 </div>
-              <Link href={`/details-page/${animal.id}`}>View Details</Link>
+              <Link className='btn bg-[#4CAF4F]' href={`/details-page/${animal.id}`}>View Details</Link>
                
                 
 
